@@ -4,6 +4,7 @@
 <table class="table table-striped table-hover">
   <thead>
     <tr>
+      <th>SI No</th>
       <th>Student Name</th>
       <th>Subject Name</th>
       <th>Marks</th>
@@ -11,7 +12,11 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let item of students_detail">
+
+    <tr
+      [ngClass]='{"table-warning":f, "table-primary":l}'
+     *ngFor="let item of students_detail;let i=index; let o=odd; let e=even; let f = first; let l = last">
+      <td>{{i+1}}</td>
       <td>{{item.name}}</td>
       <td>{{item.subject}}</td>
       <td>{{item.marks}}</td>
