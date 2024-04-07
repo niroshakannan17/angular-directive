@@ -21,7 +21,10 @@ export class AppComponent
   num:string ="0";
 
   showme = true;
-  
+  ShowGreen = false;
+  ShowBig = false;
+  ShowItalian = false;
+
   students_detail = [
     {name:"Shasha",subject:"English",marks:"85",result:"Pass"},
     {name:"Jotha",subject:"English",marks:"75",result:"Pass"},
