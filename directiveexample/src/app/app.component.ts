@@ -18,6 +18,7 @@ export class AppComponent
 {
   
   title = 'Directive Example';
+
   num:string ="0";
 
   showme = true;
@@ -25,6 +26,7 @@ export class AppComponent
   ShowBig = false;
   ShowItalian = false;
 
+  col = "red";
   students_detail = [
     {name:"Shasha",subject:"English",marks:"85",result:"Pass"},
     {name:"Jotha",subject:"English",marks:"75",result:"Pass"},
