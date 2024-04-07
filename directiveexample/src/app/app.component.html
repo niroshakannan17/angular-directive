@@ -1,5 +1,23 @@
 <h3>{{title}}</h3>
 
+<div>
+    <div class="row">
+      <label> Checkbox: 
+        <input type="checkbox" [(ngModel)]="showme">
+      </label>
+    </div>
+    <div class="row">
+        <div *ngIf="showme; then thenBlock; else elseBlock"></div>
+    </div>
+    <ng-template #thenBlock>
+      <p> hi check Box is checked</p>
+    </ng-template>
+    <ng-template #elseBlock>
+      <p> sorry check Box is not checked</p>
+    </ng-template>
+</div>
+
+
 Type Num : <input type="text" [(ngModel)]="num">
 
 <div [ngSwitch]="num">

@@ -19,6 +19,9 @@ export class AppComponent
   
   title = 'Directive Example';
   num:string ="0";
+
+  showme = true;
+  
   students_detail = [
     {name:"Shasha",subject:"English",marks:"85",result:"Pass"},
     {name:"Jotha",subject:"English",marks:"75",result:"Pass"},
